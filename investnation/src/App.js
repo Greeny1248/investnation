@@ -1,6 +1,6 @@
 import Nav from "./components/nav"
 // import Crypto from "./components/crypto"
-// import Stocks from "./components/stocks"
+import Stocks from "./components/stocks"
 import './App.css';
 import { Ticker } from "./components/ticker";
 import { Routes, Route } from "react-router-dom";
@@ -20,7 +20,7 @@ function App() {
 
       <Routes>
 
-      <Route path="/stocks" element={<Ticker />}></Route>
+      <Route path="/stocks" element={<Stocks />}></Route>
       <Route path="/crypto" element={<Ticker />}></Route>
       </Routes>
 
